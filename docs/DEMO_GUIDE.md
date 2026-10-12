@@ -1,54 +1,73 @@
-# Una demostración para docentes · 10 minutos
+# Primeros pasos con RobotSimulator
 
-## Antes de empezar
+Guía para probar la demo, conocer sus controles y completar un primer ciclo. No se requiere experiencia previa con este proyecto.
 
-Usa `exports/windows-release-immersive/RobotSimulator.exe` o descomprime el ZIP completo. Elige **Escritorio**. No hace falta instalar el editor ni iniciar sesión. Mantén todos los archivos de la entrega juntos.
+## Abrir la aplicación
 
-Prueba el recorrido antes de la reunión. La guía propone temas de conversación; no acredita aprendizaje ni seguridad industrial.
+Con un paquete Windows, descomprimir la carpeta completa y abrir `RobotSimulator.exe`. Mantener todos los archivos acompañantes. Seleccionar **Escritorio** para comenzar con mouse y teclado; no hace falta instalar el editor ni iniciar sesión.
 
-## 1. Presenta la idea · 1 minuto
+La descarga del código fuente no contiene el ejecutable. Para generarlo, consultar [desarrollo y compilación](DEVELOPMENT.md). El export se guarda en `exports/windows-release-immersive/`.
 
-“Aquí practicamos conceptos de programación de robots: referencias, puntos, instrucciones, señales y recuperación de fallas. El objetivo es aprender bases transferibles entre marcas.”
+## 1. Cargar y explorar el ejemplo
 
-Señala el robot, la pieza, las estaciones, el sensor y el panel. La celda es totalmente virtual.
+En **Práctica y guía**, seleccionar **Cargar ejemplo editable**. El ejemplo contiene puntos y un programa de recogida y entrega de una pieza.
 
-## 2. Revisa el ejemplo · 2 minutos
+- **Mover y enseñar** muestra los puntos guardados y sus detalles.
+- **Referencias…** permite revisar herramienta y referencia base: desde dónde se expresa el movimiento.
+- **Programa** muestra la secuencia de instrucciones y su vista de texto.
 
-En **Práctica y guía**, carga el ejemplo editable. En **Mover y enseñar**, selecciona puntos y revisa sus detalles. Abre **Referencias…** para explicar herramienta y referencia base.
+La celda es totalmente virtual. El objetivo es practicar referencias, puntos, movimientos, señales y recuperación, con conceptos generales que puedan transferirse al estudiar robots de distintas marcas.
 
-En **Programa**, muestra la secuencia y la vista de texto. Explica un movimiento, una espera de sensor y una llamada a subprograma. Todavía no ejecutes.
+## 2. Verificar y ejecutar
 
-## 3. Ejecuta el ciclo · 2 minutos
+1. Seleccionar **Automático** y pulsar **Verificar**.
+2. Esperar el resultado; la verificación puede tardar unos segundos.
+3. Pulsar **Iniciar** y observar la instrucción activa y la recogida/entrega.
 
-Selecciona **Automático**, **Verificar** y espera el resultado. Pulsa **Iniciar**. Observa la instrucción activa y la recogida/entrega. La verificación puede tardar unos segundos.
+**Paso** ejecuta una instrucción y pausa. **Pausa/Reanudar** suspende o continúa; **Detener** termina la ejecución. Si aparece una alarma, abrir **Diagnóstico** para consultar señales y eventos.
 
-Compara **Paso**, **Pausa/Reanudar** y **Detener**. Pregunta: “¿Qué condición necesita el programa para continuar?”
+## 3. Probar una falla de sensor
 
-## 4. Muestra una falla recuperable · 2 minutos
+Con la ejecución detenida, abrir **Escenario** y pulsar **Reponer celda** **antes** de activar **Introducir falla de sensor de presencia**. Volver a verificar e iniciar el ejemplo.
 
-En **Escenario**, repón la celda **antes** de activar la falla del sensor. Activa la falla y vuelve a iniciar el ejemplo. Espera la alarma por sensor y abre **Diagnóstico** para revisar señales y eventos.
+La espera del sensor termina en una alarma. En **Diagnóstico** se puede consultar la señal y los eventos asociados. Desactivar la falla, resolver la causa y pulsar **Restablecer**. Restablecer no rearranca: hace falta una nueva orden de inicio.
 
-Retira la falla, resuelve la causa y pulsa **Restablecer**. Señala que restablecer no rearranca: hace falta una nueva orden de inicio. No confundir un paro virtual educativo con una función de seguridad certificada.
+El paro, las alarmas y las colisiones son funciones educativas; no constituyen seguridad industrial certificada.
 
-## 5. Enseña y conserva el trabajo · 2 minutos
+## 4. Mover y enseñar un punto
 
-Vuelve a **Manual**. Elige un eje, mantén habilitación y un sentido de movimiento, suelta y enseña un punto. Cambiar eje o referencia cancela la habilitación; exige soltar y volver a pulsar.
+1. Con la ejecución detenida y sin alarma, seleccionar **Manual**.
+2. En **Mover y enseñar**, elegir un eje y una velocidad adecuada.
+3. Mantener la habilitación y un sentido de movimiento; soltar para detener.
+4. Escribir un nombre y pulsar **Enseñar punto**.
 
-En escritorio puedes usar habilitación con **Espacio** y dirección con **←/→** cuando no hay un campo de texto ni detalles con foco. No se permite mover mientras editas.
+En escritorio, **Espacio + ←/→** permite habilitar y elegir dirección cuando no hay un campo de texto o detalle con foco. Cambiar eje o referencia cancela la habilitación; se debe soltar y volver a pulsar. Mientras se edita texto no se permite jog.
 
-Para mostrar guardado sin escribir rutas externas, entra después en **Interacción espacial simulada**: **Proyecto**, nombre, **Guardar**. Si existe, exige confirmar sustitución. Crear un proyecto vacío y cargar el guardado demuestra la persistencia; cargar queda detenido y no borra una alarma enclavada.
+## 5. Guardar y cargar en escritorio
 
-## 6. Enseña la ruta espacial · 1 minuto
+Abrir **Proyecto** y pulsar **Guardar JSON**. El campo propone `user://robot-demo.json`, una ubicación de datos de la aplicación. Guardar con esa ruta sustituye el archivo existente; para conservar varias versiones se puede cambiar el nombre antes de guardar.
 
-Cierra y abre la demo; selecciona **Interacción espacial simulada**. Mouse apunta, clic selecciona, Espacio representa habilitación sostenida, botón derecho simula mirar y rueda desplaza. Editar campos abre un teclado virtual con Ñ, acentos, números, cursor y selección.
+**Cargar JSON** recupera el proyecto de la ruta indicada. La carga queda detenida en Manual y conserva las alarmas enclavadas. Un archivo inválido no reemplaza el proyecto actual.
 
-Esta es una prueba de interacción sin visor. No presentes la escena como VR validada. [Guía espacial](XR_DEMO_GUIDE.md).
+Guardar antes de cerrar la aplicación o cambiar de modo. Cada nueva apertura crea una sesión; el trabajo sin guardar no se transfiere automáticamente entre escritorio y modo espacial.
 
-## Preguntas para recoger comentarios
+## 6. Probar la interacción espacial
 
-- ¿Se entiende cuándo se enseña un punto y cuándo se ejecuta un programa?
-- ¿Qué palabras o controles necesitan explicación?
-- ¿El alumno puede explicar la causa de una alarma y su recuperación?
-- ¿Qué ejercicio encaja mejor en su materia?
+Abrir una nueva sesión y seleccionar **Interacción espacial simulada**. Para repetir el ciclo, cargar el ejemplo desde **Práctica y guía**.
 
-Anota observaciones en [validación docente](HUMAN_VALIDATION.md). La prueba en otra PC limpia y con visor aún está pendiente.
+| Control | Acción |
+|---|---|
+| Mouse y clic | Apuntar con rayo y seleccionar. |
+| Espacio mantenido | Habilitar movimiento manual. |
+| Botón derecho | Simular mirada. |
+| Rueda | Desplazar contenido. |
+
+Un campo editable abre el teclado virtual con Ñ, acentos, números, cursor y selección. En **Proyecto**, escribir un nombre y pulsar **Guardar / guardar como**; si ya existe, se solicita confirmar la sustitución. Seleccionar un archivo y usar **Cargar seleccionado** para recuperarlo.
+
+Esta modalidad funciona sin visor. El adaptador OpenXR aún necesita validación con hardware real; la emulación no demuestra compatibilidad VR. [Guía espacial](XR_DEMO_GUIDE.md).
+
+## Continuar explorando
+
+Modificar una instrucción o un punto y verificar de nuevo permite observar cómo cambian el recorrido y sus condiciones. La guía no acredita aprendizaje ni sustituye formación con equipos reales.
+
+Para registrar una prueba de uso está disponible el [formulario de evaluación](HUMAN_VALIDATION.md). [Requisitos](REQUIREMENTS.md) · [Estado y límites](STATUS.md).

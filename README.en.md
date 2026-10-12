@@ -35,7 +35,7 @@ The goal is to understand movement, teaching, programming and recovery. The inte
 
 ## Two ways to try it, one robot
 
-**Desktop:** an orbit camera, mouse and keyboard. Recommended for a first demonstration.
+**Desktop:** an orbit camera, mouse and keyboard. Recommended for getting started.
 
 **Simulated spatial interaction:** an in-world panel, ray selection and a virtual keyboard. This exercises the immersive interaction route without a headset.
 
@@ -51,15 +51,15 @@ If you have the Windows package:
 2. Open `RobotSimulator.exe` and select **Escritorio** (Desktop).
 3. Open **Práctica y guía** and load the editable example.
 4. Inspect points and the program; select **Automático**, verify and start the cycle.
-5. Follow the [demonstration guide](docs/DEMO_GUIDE.en.md) to introduce a fault and explain recovery.
+5. Follow the [getting started guide](docs/DEMO_GUIDE.en.md) to try a fault and complete recovery.
 
 The source download does not contain the executable. Follow the [build instructions](docs/DEVELOPMENT.md) to generate your Windows package in `exports/windows-release-immersive/`.
 
 The self-contained Windows x64 package does not require the Godot editor or a separate .NET installation. No account or connection is required during practice. Execution has been checked on the development machine; a clean second PC still needs testing. [Requirements](docs/REQUIREMENTS.md).
 
-## Designed for a classroom discussion
+## Explore the complete cycle
 
-Show **a successful operation and a recoverable fault**. Ask students to explain the reference frame, point, instruction and condition that allows execution to continue.
+The demo supports **a successful operation and a recoverable fault**. Alongside the motion, it is possible to inspect the reference frame, point, active instruction and condition that allows execution to continue.
 
 The pendant separates **Mover y enseñar** (Move and teach) from **Programa** (Program). Execution and safety controls remain accessible. A Spanish virtual keyboard supports editing within the spatial route.
 
@@ -95,7 +95,7 @@ This demo **does not replace an industrial robot, safety training or certificati
 
 | Goal | Documentation |
 |---|---|
-| Demonstrate it to colleagues | [English demo guide](docs/DEMO_GUIDE.en.md) |
+| Try the demo for the first time | [Getting started](docs/DEMO_GUIDE.en.md) |
 | Check implemented and pending work | [Status](docs/STATUS.md) · [Roadmap](docs/ROADMAP.md) |
 | Build or package | [Development](docs/DEVELOPMENT.md) · [Distribution](docs/EXPORT.md) |
 | Understand desktop and XR reuse | [Architecture](docs/ARCHITECTURE.md) · [Spatial architecture](docs/XR_ARCHITECTURE.md) |

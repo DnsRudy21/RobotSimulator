@@ -1,6 +1,6 @@
-# Prueba docente y de otra PC
+# Formulario de evaluación de uso
 
-Completar solo con una prueba real. No sustituir observaciones humanas por pruebas automáticas. Evitar datos personales del alumno en el repositorio público.
+Formulario opcional para registrar la experiencia de una persona que prueba la demo. Los resultados corresponden a tareas realizadas; no se sustituyen por pruebas automáticas. No incluir datos personales del participante.
 
 Fecha: ______ · Equipo/sistema: ______ · Rol del participante: ______
 
@@ -16,4 +16,4 @@ Fecha: ______ · Equipo/sistema: ______ · Rol del participante: ______
 | Guardar, crear vacío y cargar proyecto | | |
 | Completar tarea con guía sin intervención del desarrollador | | |
 
-No concluimos dominio o aprendizaje solo por completar el recorrido. Para visor usar [XR_HARDWARE_VALIDATION](XR_HARDWARE_VALIDATION.md).
+Completar el recorrido no demuestra por sí solo dominio o aprendizaje. Para visor usar [XR_HARDWARE_VALIDATION](XR_HARDWARE_VALIDATION.md).

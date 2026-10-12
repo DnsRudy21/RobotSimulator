@@ -18,11 +18,11 @@ foreach ($name in @('GODOT_LICENSE.txt','GODOT_COPYRIGHT.txt','DOTNET_LICENSE.tx
 $guide = @'
 RobotSimulator — Demo educativa para Windows x64
 Abrir RobotSimulator.exe y conservar todos los archivos de esta carpeta.
-Escritorio: recomendado para la primera demostración.
+Escritorio: recomendado para comenzar con mouse y teclado.
 Interacción espacial simulada: mouse apunta, clic selecciona, Espacio habilita
 jog, botón derecho simula mirada. VR NO VALIDADA.
 OpenXR: necesita runtime activo y visor/controladores PCVR; hardware pendiente.
-Guía docente: DEMO_GUIDE.md. Ruta espacial: XR_DEMO_GUIDE.md.
+Guía de inicio: DEMO_GUIDE.md. Ruta espacial: XR_DEMO_GUIDE.md.
 Sin editor/login/conexión para ejecutar. .NET incluido. Otra PC limpia pendiente.
 Conservar avisos de Godot/.NET. Seguridad y colisiones educativas.
 '@

@@ -1,6 +1,6 @@
 # Mapa de reutilización
 
-Producción compartida significa usada por más de un montaje o por el montaje espacial final y el emulador; no porcentaje estimado. Conservamos una RobotSimulation por escena y un tick C# propietario.
+Producción compartida significa usada por más de un montaje o por el montaje espacial final y el emulador; no porcentaje estimado. Cada escena usa una RobotSimulation y un único propietario del tick C#.
 
 | Componente | Cambio / clase | Consumidores | Evidencia y límites |
 |---|---|---|---|

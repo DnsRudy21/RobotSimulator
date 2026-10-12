@@ -35,7 +35,7 @@ La propuesta es aprender qué significa mover, enseñar, programar y recuperar u
 
 ## Dos formas de probarla, un mismo robot
 
-**Escritorio:** cámara orbital, mouse y teclado. Es el punto de entrada recomendado para una primera presentación.
+**Escritorio:** cámara orbital, mouse y teclado. Es el punto de entrada recomendado para comenzar.
 
 **Interacción espacial simulada:** panel situado en el mundo, selección por rayo y teclado virtual. Permite probar la ruta de interacción inmersiva sin disponer de visor.
 
@@ -51,15 +51,15 @@ Si ya tienes el paquete Windows:
 2. Abre `RobotSimulator.exe` y elige **Escritorio**.
 3. En **Práctica y guía**, carga el ejemplo editable.
 4. Revisa sus puntos y programa; selecciona **Automático**, verifica e inicia el ciclo.
-5. Sigue la [guía para docentes](docs/DEMO_GUIDE.md) para probar una falla y explicar la recuperación.
+5. Consulta [primeros pasos](docs/DEMO_GUIDE.md) para probar una falla y completar la recuperación.
 
 La descarga del código fuente no incluye el ejecutable. Para generar tu paquete Windows, sigue [desarrollo y compilación](docs/DEVELOPMENT.md); el resultado se guarda en `exports/windows-release-immersive/`.
 
 El paquete es Windows x64 autocontenido: no necesita el editor Godot ni instalar .NET para ejecutarse. No requiere cuenta ni conexión durante la práctica. La ejecución se ha comprobado en el equipo de desarrollo; falta validarla en otra PC limpia. [Requisitos y alcance](docs/REQUIREMENTS.md).
 
-## Pensado para una conversación en el aula
+## Explorar el ciclo completo
 
-Una buena primera demostración incluye **una operación correcta y una falla recuperable**. No basta con ver moverse el robot: interesa que el alumno explique la referencia, el punto, la instrucción y la condición que permite continuar.
+La demo permite practicar **una operación correcta y una falla recuperable**. Además de observar el movimiento, se pueden revisar la referencia, el punto, la instrucción activa y la condición que permite continuar.
 
 El panel separa **Mover y enseñar** de **Programa**. Las funciones de ejecución y seguridad permanecen accesibles, y el teclado virtual permite editar dentro de la ruta espacial.
 
@@ -95,7 +95,7 @@ Esta demo **no sustituye un robot industrial, un curso de seguridad ni una certi
 
 | Quiero… | Documento |
 |---|---|
-| Presentarla a compañeros docentes | [Guía de demostración](docs/DEMO_GUIDE.md) |
+| Probar la demo por primera vez | [Primeros pasos](docs/DEMO_GUIDE.md) |
 | Conocer lo implementado y lo pendiente | [Estado](docs/STATUS.md) · [Próximos pasos](docs/ROADMAP.md) |
 | Compilar o preparar un paquete | [Desarrollo](docs/DEVELOPMENT.md) · [Distribución](docs/EXPORT.md) |
 | Entender cómo comparte escritorio y VR | [Arquitectura](docs/ARCHITECTURE.md) · [Ruta espacial](docs/XR_ARCHITECTURE.md) |

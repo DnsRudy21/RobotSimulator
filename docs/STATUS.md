@@ -23,6 +23,10 @@ Las mediciones de escritorio y emulación están separadas en [PERFORMANCE](PERF
 
 Cinemática inversa local, agarre y colisiones aproximados, sin seguridad industrial certificada ni control de equipos físicos. No hay resultados de otra PC limpia, seguimiento/sesión reales, comodidad en visor ni aprendizaje validado. [Alcance](REQUIREMENTS.md) · [Estado XR](XR_STATUS.md).
 
+## Documentación
+
+Las guías de inicio en español e inglés explican controles, ciclo, fallas y guardado en escritorio y modo espacial. La interfaz de la aplicación está en español. El formulario de evaluación permite registrar una prueba de uso. Los enlaces y el contenido UTF-8 se comprobaron; la revisión documental no cambia el funcionamiento de la aplicación.
+
 ## Próximo paso
 
 Completar un recorrido con docentes, registrar dificultades y probar el paquete en otra PC. Cuando exista hardware PCVR disponible, realizar el [checklist de visor](XR_HARDWARE_VALIDATION.md) antes de afirmar compatibilidad.
