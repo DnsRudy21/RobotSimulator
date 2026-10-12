@@ -16,7 +16,7 @@
 
 ## De la primera posición al primer ciclo
 
-**RobotSimulator es una demo educativa para Windows.** El alumno trabaja con un robot virtual de seis ejes y un panel de programación —teach pendant— para practicar fundamentos que después puede aplicar al conocer equipos de distintas marcas.
+**RobotSimulator es una demo educativa para Windows.** El alumno trabaja con un robot virtual de seis ejes y un panel de programación (teach pendant) para practicar fundamentos que después puede aplicar al conocer equipos de distintas marcas.
 
 La propuesta es aprender qué significa mover, enseñar, programar y recuperar una celda. La interfaz usa términos generales y mantiene visibles el modo de operación, la ejecución y las alarmas.
 
