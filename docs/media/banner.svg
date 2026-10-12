@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title description">
+  <title id="title">RobotSimulator</title>
+  <desc id="description">Aprende robótica industrial. Enseña, programa y explora una celda virtual.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101c31"/><stop offset="1" stop-color="#173c4c"/></linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#81d8d0" stroke-opacity=".08"/></pattern>
+  </defs>
+  <rect width="1280" height="360" rx="24" fill="url(#bg)"/>
+  <rect width="1280" height="360" rx="24" fill="url(#grid)"/>
+  <path d="M65 68H180" stroke="#58dfca" stroke-width="6" stroke-linecap="round"/>
+  <text x="64" y="145" fill="#fff" font-family="Segoe UI,Arial,sans-serif" font-size="66" font-weight="700">RobotSimulator</text>
+  <text x="68" y="198" fill="#b5dbdf" font-family="Segoe UI,Arial,sans-serif" font-size="26">Enseña. Programa. Comprende.</text>
+  <text x="68" y="239" fill="#b5dbdf" font-family="Segoe UI,Arial,sans-serif" font-size="22">Teach. Program. Understand.</text>
+  <rect x="66" y="280" width="358" height="35" rx="17" fill="#58dfca"/>
+  <text x="86" y="303" fill="#101c31" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="700">WINDOWS DEMO · EDUCACIÓN · EDUCATION</text>
+  <g fill="none" stroke="#58dfca" stroke-width="22" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M907 292H1077M980 292V236L917 161L995 88L1105 120"/>
+    <path d="M1105 120L1140 111M1105 120L1135 149" stroke-width="12"/>
+  </g>
+  <g fill="#163a4a" stroke="#f9c74f" stroke-width="8"><circle cx="980" cy="236" r="20"/><circle cx="917" cy="161" r="20"/><circle cx="995" cy="88" r="20"/><circle cx="1105" cy="120" r="14"/></g>
+</svg>

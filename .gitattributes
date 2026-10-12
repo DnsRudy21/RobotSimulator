@@ -1,0 +1,14 @@
+* text=auto eol=lf
+*.cs text eol=lf
+*.gd text eol=lf
+*.tscn text eol=lf
+*.godot text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.ps1 text eol=crlf
+*.png binary
+*.exe binary
+*.pck binary
+*.zip binary
+# Preserve official third-party notices byte for byte.
+assets/notices/* -text

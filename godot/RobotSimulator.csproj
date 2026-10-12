@@ -1,0 +1,11 @@
+<Project Sdk="Godot.NET.Sdk/4.7.2">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <Nullable>enable</Nullable>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+    <NuGetLockFilePath Condition="'$(Configuration)' == 'Debug' and '$(RuntimeIdentifier)' == ''">packages.lock.json</NuGetLockFilePath>
+    <NuGetLockFilePath Condition="'$(Configuration)' != 'Debug' or '$(RuntimeIdentifier)' != ''">packages.$(Configuration).$(RuntimeIdentifier).lock.json</NuGetLockFilePath>
+  </PropertyGroup>
+  <ItemGroup><ProjectReference Include="../src/RobotSimulator.Core/RobotSimulator.Core.csproj" /></ItemGroup>
+</Project>

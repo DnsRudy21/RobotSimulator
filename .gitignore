@@ -1,0 +1,24 @@
+**/.godot/
+**/bin/
+**/obj/
+.vs/
+*.user
+*.suo
+exports/
+*.log
+
+# Local demos, history, work notes and diagnostic output
+.local/
+AGENTS.md
+/CONTINUE_*.txt
+PROMPT_*.txt
+RobotSimulator_Loop_*.txt
+.env
+.env.*
+!.env.example
+godot/export_credentials.cfg
+*.pfx
+*.p12
+
+# Measurements are regenerated locally; curated screenshots live in docs/media.
+docs/immersive-release/
